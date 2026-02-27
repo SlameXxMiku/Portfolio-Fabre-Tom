@@ -1,0 +1,45 @@
+m = [
+    [0, 0, 0, 12, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 10, 0, 25, 0],
+    [45, 0, 0, 0, 0]
+]
+
+# Partie 1 : Extraction des éléments non nuls dans result
+result = []
+nb = 0
+N = len(m)
+
+for x in range(N):
+    for y in range(N):
+        if m[x][y] != 0:
+            result.append([x, y, m[x][y]])
+            nb += 1
+
+print("m =", m)
+print("result =", result)
+
+# Partie 2 : Reconstitution de m à partir de result
+m2 = [[0 for _ in range(N)] for _ in range(N)]
+
+for item in result:
+    x, y, value = item
+    m2[x][y] = value
+
+print("m2 =", m2)
+
+# Partie 3 : Vérification de l'égalité entre m et m2
+identique = True
+
+for x in range(N):
+    for y in range(N):
+        if m[x][y] != m2[x][y]:
+            print("échec")
+            identique = False
+            break
+    if not identique:
+        break
+
+if identique:
+    print("réussite")
