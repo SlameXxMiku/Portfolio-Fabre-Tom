@@ -1,0 +1,20 @@
+int a = 4;
+int b = 2;
+int c = 3;
+while (a >= b && b <= c)
+{
+    if (a < b + c)
+    {
+        a = c + 1;
+        b--;
+    }
+    else
+    {
+        a--;
+        c--;
+    }
+}
+
+Console.Writeline(a);
+Console.Writeline(b);
+Console.Writeline(c);
