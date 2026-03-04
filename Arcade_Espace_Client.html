@@ -1,31 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabre Tom - Portfolio</title>
+    <title>Projet - Arcade Espace Client</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header_visual.css">
     <link rel="stylesheet" href="footer_visual.css">
-    <script src="script.js"></script>
 </head>
+<body class="projet-page">
 
-<body>
-
+    <!-- HEADER / NAV -->
     <header id="header">
-        <nav class="navbar-Arcade">
+        <nav class="navbar navbar-MediaTekFormation">
             <a href="index.html#Acceuil">Accueil</a>
             <a href="index.html#Profil">Profil</a>
             <a href="index.html#parcours">Parcours</a>
             <a href="index.html#competences">Compétences</a>
             <a href="index.html#projets">Réalisations</a>
             <a href="index.html#Contact">Contact</a>
-        </nav>
+        <!-- </nav> -->
     </header>
 
-    <body>
+    <main>
 
-    </body>
+        <!-- TITRE DU PROJET -->
+        <div class="projet-header">
+            <div class="projet-tag">Stage BTS SIO</div>
+            <h1>Arcade Espace Client</h1>
+            <a href="#" target="_blank" class="projet-url">
+                ↗ espace-client.arcade
+            </a>
+        </div>
 
+        <!-- SCREENSHOT -->
+        <div class="screenshot-wrapper">
+            
+            <div class="screenshot-placeholder">
+                🖼️ <img src="images/Arcade Espace Client page.png" alt="Arcade Espace Client"/>
+            </div>
+        </div>
+
+        <!-- DESCRIPTION -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Contexte</p>
+                <p>
+                    Arcade est une société éditrice de logiciels de gestion destinés aux laboratoires et industries. Elle commercialise notamment les solutions MASSIA Gestion, MASSIA Laboratoire et MASSIA Pesée, utilisées par des clients dans toute la France.
+                </p>
+                <p>
+                    Dans le cadre de mon stage de BTS SIO, j'ai été chargé de développer un espace client sécurisé permettant aux utilisateurs d'accéder à leurs ressources : mises à jour logicielles, manuels opérateurs, récapitulatifs de versions et vidéos de formation, le tout personnalisé selon les produits auxquels chaque client est abonné.
+                </p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- VIDÉO -->
+        <section class="projet-section alt">
+            <div class="projet-inner">
+                <p class="section-label">Vidéo de présentation</p>
+                <div class="video-wrapper">
+                    <video controls muted>
+                        <source src="images/ArcadeEspaceClient.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- MISSION -->
+        <section class="projet-section alt">
+            <div class="projet-inner">
+                <p class="section-label">Mission</p>
+                <div class="mission-box">
+                    <p>
+                        J'ai conçu et développé de A à Z l'espace client Arcade lors de mon stage. Le projet repose sur Symfony 6, avec une authentification par session, un système de droits par progiciel, et un back-office d'administration. J'ai également mis en place la gestion des fichiers (téléchargement sécurisé, lecture de vidéos en streaming), le déploiement sur serveur IIS Windows, et les notifications par e-mail lors des téléchargements.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- OUTILS -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Outils &amp; langages utilisés</p>
+                <div class="tools-grid">
+                    <span class="tool-badge">VSCode</span>
+                    <span class="tool-badge">PHP 8</span>
+                    <span class="tool-badge">Symfony 6</span>
+                    <span class="tool-badge">Twig</span>
+                    <span class="tool-badge">Tailwind CSS</span>
+                    <span class="tool-badge">JavaScript</span>
+                    <span class="tool-badge">GitHub</span>
+                    <span class="tool-badge">IIS Windows</span>
+                    <span class="tool-badge">Azure Active Directory</span>
+                    <span class="tool-badge">Composer</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- COMPETENCES -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Compétences officielles</p>
+                <div class="comp-group">
+                    <div class="comp-group-title">BLOC 1 — Services informatiques aux organisations</div>
+                    <ul class="comp-list">
+                        <li>Mettre en place et vérifier les niveaux d'habilitation associés à un service</li>
+                        <li>Traiter des demandes concernant les applications</li>
+                        <li>Participer à l'évolution d'un site Web exploitant les données de l'organisation</li>
+                        <li>Analyser les objectifs et les modalités d'organisation d'un projet</li>
+                        <li>Planifier les activités</li>
+                        <li>Déployer un service</li>
+                        <li>Réaliser les tests d'intégration et d'acceptation d'un service</li>
+                        <li>Gérer des sauvegardes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="center-content">
+            <p>Fabre Tom - 2026 - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
 </html>

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabre Tom - Portfolio</title>
+    <title>Projet - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header_visual.css">
     <link rel="stylesheet" href="footer_visual.css">
-    <script src="script.js"></script>
 </head>
+<body class="projet-page">
 
-<body>
-
+    <!-- HEADER / NAV -->
     <header id="header">
-        <nav class="navbar-MediaTek86 navbar">
+        <nav class="navbar navbar-MediaTekFormation">
             <a href="index.html#Acceuil">Accueil</a>
             <a href="index.html#Profil">Profil</a>
             <a href="index.html#parcours">Parcours</a>
@@ -24,58 +22,152 @@
         </nav>
     </header>
 
-    <body>
-        <div class="MediaTek86-">
-            <section id="MediaTek86" class="Accueil center-content">
-                <h1 class="name">MédiaTek86</h1>
-                <div class="space"></div>
-                <p>Application de bureau</p>
-                <p>Gestionnaire de base de données</p>
-                <div class="space"></div>
-                <a class="bouton-MediaTek86" href="#Application">Présentation de l'application</a>
+    <main>
 
-            </section>
+        <!-- TITRE DU PROJET -->
+        <div class="projet-header">
+            <div class="projet-tag">Projet BTS SIO</div>
+            <h1>MédiaTek86</h1>
+            <a href="https://github.com/SlameXxMiku/MediaTek86" target="_blank" class="projet-url">
+                ↗ GitHub - MediaTek86
+            </a>
         </div>
-        <div class="section-application">
-            <section id="Application">
-                <h2 class="MediaTek86">Présentation de MédiaTek86</h2>
-                <div class="space"></div>
 
-                <p><i class="MediaTek86">MédiaTek86</i> est une application burdeau développé en C# </p>
-                <p> permet de gérer la base de données de la médiathèque "MédiaTek86".</p>
-                <div class="space"></div>
-                <p>Cette dernière réponds donc aux critères qui ont été demandé , c'est à dire :</p>
-                <div class="space"></div>
-                <ul class="list-MediaTek86">
-                    <li>-Connexion à la base de données via une page <i class="MediaTek86">"Login"</i></li>
-                    <li>-<i class="vert">Ajout</i> de <i class="MediaTek86">personnel</i></li>
-                    <li>-<i class="rouge"> Suppression</i> de <i class="MediaTek86">personnel</i></li>
-                    <li>-<i class="bleu">Modification</i> de <i class="MediaTek86">personnel</i></li>
-                    <li>-<i class="vert">Ajout</i> <i class="MediaTek86">d'absence</i></li>
-                    <li>-<i class="rouge"> Suppression</i> <i class="MediaTek86">d'absence</i></li>
-                    <li>-<i class="bleu">Modification</i> <i class="MediaTek86">d'absence</i></li>
-
-            </section>
+        <!-- SCREENSHOT -->
+        <div class="screenshot-wrapper">
+            <div class="screenshot-bar">
+                <div class="dot dot-red"></div>
+                <div class="dot dot-yellow"></div>
+                <div class="dot dot-green"></div>
+            </div>
+            <div class="screenshot-placeholder">
+                🖼️ <img src="images/MediaTek86 page.png" alt="MédiaTek86"/>
+            </div>
         </div>
-        <div class="depot-github-">
-            <section id="depot-github" class=" center-content">
-                <div class="texte-depot-github">
-                    <h2 class="MediaTek86">Dépot GitHub</h2>
-                    <p>Vous pouvez retrouver le code source de l'application sur mon dépôt GitHub :</p>
-                    <a class="MediaTek86" href="https://github.com/SlameXxMiku/MediaTek86" target="_blank">GitHub - MediaTek86</a>
-                    <p>Avec toutes les explications dans le fichier "README.md"</p>
-                    <p>Mais également dans cette vidéo :</p>
+
+        <!-- DESCRIPTION -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Contexte</p>
+                <p>
+                    MédiaTek86 est un réseau départemental qui coordonne le fonctionnement des médiathèques de la Vienne. Il gère les flux d'emprunts — livres, DVD, CD — entre les différents établissements, tout en accompagnant la transition vers des ressources numériques accessibles à l'ensemble du département.
+                </p>
+                <p>
+                    Dans le cadre de la gestion interne, les médiathèques avaient besoin d'un outil de bureau permettant de gérer directement leur base de données : personnels et absences. L'application MédiaTek86 a été développée pour répondre à ce besoin.
+                </p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- MISSION -->
+        <section class="projet-section alt">
+            <div class="projet-inner">
+                <p class="section-label">Mission</p>
+                <div class="mission-box">
+                    <p>
+                        J'ai développé une application de bureau en C# permettant de gérer la base de données de la médiathèque. L'application s'articule autour d'une page de connexion sécurisée et propose des fonctionnalités complètes de gestion des personnels et des absences.
+                    </p>
+                    <ul class="comp-list" style="margin-top: 12px;">
+                        <li>Connexion à la base de données via une page Login</li>
+                        <li>Ajout, modification et suppression de <strong>personnel</strong></li>
+                        <li>Ajout, modification et suppression d'<strong>absences</strong></li>
+                    </ul>
                 </div>
-                <a href="https://youtu.be/6klEIqKdjto" target="_blank">
-                    <video class="video-background" controls autoplay loop muted>
+            </div>
+        </section>
 
-    <source src="images/MediaTek86.mp4" type="video/mp4">
-</video>
-                    <iframe src="MediaTek86.pdf" width="100%" height="600px"></iframe>
+        <hr class="divider">
 
-                </a>
-            </section>
+        <!-- VIDÉO -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Vidéo de présentation</p>
+                <div class="video-wrapper">
+                    <video controls muted>
+                        <source src="images/MediaTek86.mp4" type="video/mp4">
+                    </video>
+                    <a href="https://youtu.be/6klEIqKdjto" target="_blank" class="projet-url" style="margin-top: 8px; display: inline-block;">
+                        ↗ Voir sur YouTube
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- OUTILS -->
+        <section class="projet-section alt">
+            <div class="projet-inner">
+                <p class="section-label">Outils &amp; langages utilisés</p>
+                <div class="tools-grid">
+                    <span class="tool-badge">C#</span>
+                    <span class="tool-badge">Visual Studio</span>
+                    <span class="tool-badge">.NET</span>
+                    <span class="tool-badge">MySQL</span>
+                    <span class="tool-badge">PHPMyAdmin</span>
+                    <span class="tool-badge">GitHub</span>
+                    <span class="tool-badge">WinForms</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- LIENS -->
+        <section class="projet-section">
+            <div class="projet-inner">
+                <p class="section-label">Ressources du projet</p>
+                <div class="links-grid">
+
+                    <a href="https://github.com/SlameXxMiku/MediaTek86" class="link-card" target="_blank">
+                        <img src="images/github logo.png" class="link-icon">
+                        <div class="link-info">
+                            <div class="link-title">Dépôt GitHub</div>
+                            <div class="link-desc">Code source complet</div>
+                        </div>
+                        <span class="link-arrow">→</span>
+                    </a>
+
+                    <a href="images/MediaTek86.pdf" class="link-card" target="_blank">
+                        <img src="images/pdf_logo.png" class="link-icon">
+                        <div class="link-info">
+                            <div class="link-title">Documentation</div>
+                            <div class="link-desc">Présentation du projet</div>
+                        </div>
+                        <span class="link-arrow">→</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- COMPETENCES -->
+        <section class="projet-section alt">
+            <div class="projet-inner">
+                <p class="section-label">Compétences officielles</p>
+                <div class="comp-group">
+                    <div class="comp-group-title">BLOC 1 — Services informatiques aux organisations</div>
+                    <ul class="comp-list">
+                        <li>Mettre en place et vérifier les niveaux d'habilitation associés à un service</li>
+                        <li>Gérer des sauvegardes</li>
+                        <li>Traiter des demandes concernant les applications</li>
+                        <li>Analyser les objectifs et les modalités d'organisation d'un projet</li>
+                        <li>Planifier les activités</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="center-content">
+            <p>Fabre Tom - 2026 - Tous droits réservés.</p>
         </div>
-    </body>
+    </footer>
 
+</body>
 </html>
